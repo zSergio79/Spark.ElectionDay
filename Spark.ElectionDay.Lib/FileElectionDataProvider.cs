@@ -35,7 +35,7 @@ namespace Spark.ElectionDay.Lib
                     List<Election> result = new();
                     if (int.TryParse(reader.ReadLine(), out var blocksCount) == true)
                     {
-                        reader.ReadLine();
+                        reader.ReadLine(); //separator
                         for (int i = 0; i < blocksCount; i++)
                         {
                             // Read Candidates
