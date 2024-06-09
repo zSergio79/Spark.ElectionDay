@@ -50,7 +50,7 @@ namespace Spark.ElectionDay.Lib
 
                                     var candidateName = reader.ReadLine();
                                     if (string.IsNullOrEmpty(candidateName) == false)
-                                        candidates.Add(new Candidate() { Name = candidateName });
+                                        candidates.Add(new Candidate() { Name = candidateName, Id = j + 1 });
                                     else
                                         throw new Exception($"Invalid candidate name in file '{filename}'.");
                                 }
@@ -84,7 +84,7 @@ namespace Spark.ElectionDay.Lib
                             if (bulletins.Count == 0)
                                 throw new Exception($"Invalid file '{filename}' format.");
 
-                            result.Add(new Election() { Candidates = candidates, Bulletins = bulletins });
+                            result.Add(new Election() { Candidates = candidates, Bulletins = bulletins , Id = i + 1});
                            // reader.ReadLine();
                         }
                     }

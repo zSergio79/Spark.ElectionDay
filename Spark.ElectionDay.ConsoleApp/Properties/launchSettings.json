@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Spark.ElectionDay.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\sergi\\source\\repos\\Spark.ElectionDay\\Spark.ElectionDay.ConsoleApp\\bin\\Debug\\net8.0\\elect.txt"
+    }
+  }
+}
